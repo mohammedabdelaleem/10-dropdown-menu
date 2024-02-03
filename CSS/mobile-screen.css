@@ -1,0 +1,112 @@
+* {
+font-family: sans-serif;
+}
+
+.show-for-mobile {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+.abslute {
+  position: absolute;
+  top:28px;
+  right: 0;
+  transform: scaleX(1.6);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.show-on-click {
+  display: none;
+  border-top: 3px solid #000;
+  margin-top: 10px;
+}
+
+#burger:checked + .show-on-click ,
+#html:checked + .sub-div,
+#css:checked + .sub-div,
+#js:checked + .sub-div,
+#mini:checked + .sub-sub-div
+{
+  display: block;
+}
+
+.main-div {
+padding-top: 10px;
+padding-bottom: 15px;
+border-bottom: 3px solid black;
+}
+
+.sub-div {
+  display: none;
+ line-height: 30px;
+}
+
+label {
+  display: block;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px 0 1px 20px;
+}
+
+.sub-div li a{
+  display: block;
+  font-size: 18px;
+  padding: 5px 0 5px 50px;
+}
+
+.sub-sub-div {
+  display: none;
+}
+
+.mini-projects {
+  font-size: 18px;
+  padding: 5px 0 5px 50px;
+}
+
+.sub-sub-div li a{
+display: block;
+}
+
+.sub-sub-div {
+  display: none;
+  padding-left: 50px;
+}
+
+.fa-solid {
+  font-size: 25px;
+  font-weight: bold;
+position: absolute;
+right: 40px;
+}
+
+.mini-project-plus {
+  font-size: 20px;
+  right: 60px;
+}
+
+.fa-bars:hover,
+label:hover,
+label:hover .fa-plus,
+.sub-div li a:hover {
+  color: cyan;
+  letter-spacing: 1.6px;
+}
+
+
+footer span {
+  position: relative;
+}
+
+.fa-heart {
+  position: absolute;
+left: 30px;
+}

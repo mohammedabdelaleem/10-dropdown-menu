@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/mobile-screen.css"
+      media="(max-width:750px)"
+    />
+    <link rel="stylesheet" href="CSS/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./imgs/dropdown-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="hide-for-mobile">
+      <h1>Courses <sup style="color: rgb(243, 40, 40)">4</sup> Arab</h1>
+      <ul class="flex">
+        <li class="main-list">
+          <a
+            class="main-link"
+            target="_blank"
+            href="https://courses4arab.com/html-full-course.html"
+            >HTML</a
+          >
+
+          <ul class="sub-list">
+            <li><a href="#">Full Course</a></li>
+            <li><a href="#">Crash Course</a></li>
+            <li><a href="#">Learn at 1h</a></li>
+          </ul>
+        </li>
+
+        <li class="main-list">
+          <a
+            class="main-link"
+            target="_blank"
+            href="https://courses4arab.com/css.html"
+            >CSS</a
+          >
+
+          <ul class="sub-list">
+            <li><a href="#">Full Course</a></li>
+            <li><a href="#">CSS Examples</a></li>
+
+            <li class="mini-projects">
+              <a href="#">Mini Projects <span class="plus">&#43;</span></a>
+
+              <ul class="sub-sub-list">
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-list">
+          <a
+            class="main-link"
+            target="_blank"
+            href="https://courses4arab.com/javascript.html"
+            >Java Script</a
+          >
+          <ul class="sub-list sub-of-js">
+            <li><a href="#">commig soon&#128293;</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <header class="show-for-mobile">
+      <h1>Courses <sup style="color: rgb(243, 40, 40)">4</sup> Arab</h1>
+
+      <label class="abslute" for="burger"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <input id="burger" type="checkbox" />
+
+      <div class="show-on-click">
+        <div class="main-div">
+          <label for="html">HTML <i class="fa-solid fa-plus"></i></label>
+          <input type="checkbox" id="html" />
+
+          <ul class="sub-div">
+            <li><a href="#">Full Course</a></li>
+            <li><a href="#">Crash Course</a></li>
+            <li><a href="#">Learn at 1h</a></li>
+          </ul>
+        </div>
+
+        <div class="main-div">
+          <label for="css">CSS <i class="fa-solid fa-plus"></i></label>
+          <input type="checkbox" id="css" />
+
+          <ul class="sub-div">
+            <li><a href="#">Full Course</a></li>
+            <li><a href="#">CSS Examples</a></li>
+
+            <li>
+              <label class="mini-projects" for="mini"
+                >Mini Projects<i class="fa-solid fa-plus mini-project-plus"></i
+              ></label>
+              <input id="mini" type="checkbox" />
+
+              <ul class="sub-sub-div">
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="main-div">
+          <label for="js">Java Script <i class="fa-solid fa-plus"></i></label>
+          <input type="checkbox" id="js" />
+
+          <ul class="sub-div">
+            <li><a href="#">commig soon &#160;&#128293;</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      Responsive Drop-down <br />
+      Menu Bar<br />
+      HTML & CSS only <br />
+    </main>
+
+    <footer>
+      <p>
+        Designed By Eng Mohammed Abdelaleem
+        <span>
+          <i class="fa-regular fa-copyright"></i>&#160;<i
+            class="fa-solid fa-heart"
+          ></i>
+        </span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+
+/*
+===========================
+1.Animation for heart "General" 
+============================
+*/
+
+.fa-heart {
+    animation: heart 2s infinite linear;
+}
+
+@keyframes heart {
+    0%,100%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+   
+}
+
+header h1 sup {
+    animation: heart 2s infinite linear;
+}
+
+@keyframes heart {
+    0%,100%{
+        opacity: 0;
+        font-size: 20px;
+    }
+
+    50%{
+        opacity: 1;
+        font-size: 25px;
+    }
+   
+}
+
+main  {
+    animation: main-content 2s 1 ;
+}
+
+@keyframes main-content {
+    0%{
+       transform: translateX(150px);
+    }
+    50%{
+        transform: translateX(-150px);
+    }
+    70%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*
+===========================
+2.Animation for big screens 
+============================
+*/
+
+header {
+  animation: down-header 1.3s 1;
+}
+
+@keyframes down-header {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: move-title 2s 1;
+}
+
+@keyframes move-title {
+  0% {
+    transform: translateX(-100px);
+    color: cyan;
+  }
+
+  50% {
+    transform: translateX(140px);
+    color: cyan;
+  }
+
+  75% {
+    transform: translateX(-130px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sub-list,
+.sub-sub-list {
+  animation: hover 1s 1;
+}
+
+.sub-sub-list {
+  animation: hover 1s 1;
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
+===========================
+1.Animation for phone screens 
+============================
+*/
+.show-on-click,
+.sub-div,
+.sub-sub-div {
+  animation: move-content 1s 1;
+}
+
+@keyframes move-content {
+  0% {
+    transform: translateX(100px);
+  }
+
+  50% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
